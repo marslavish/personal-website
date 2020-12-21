@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.bb557bf1.chunk.css",
+    "main.js": "/personal-website/static/js/main.2d435d2a.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.2d435d2a.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.eb7857d0.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.eb7857d0.js.map",
+    "static/css/2.7e33c8ea.chunk.css": "/personal-website/static/css/2.7e33c8ea.chunk.css",
+    "static/js/2.35e6fabf.chunk.js": "/personal-website/static/js/2.35e6fabf.chunk.js",
+    "static/js/2.35e6fabf.chunk.js.map": "/personal-website/static/js/2.35e6fabf.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "static/css/2.7e33c8ea.chunk.css.map": "/personal-website/static/css/2.7e33c8ea.chunk.css.map",
+    "static/css/main.bb557bf1.chunk.css.map": "/personal-website/static/css/main.bb557bf1.chunk.css.map",
+    "static/js/2.35e6fabf.chunk.js.LICENSE.txt": "/personal-website/static/js/2.35e6fabf.chunk.js.LICENSE.txt",
+    "static/media/calculator.a9a5b0f3.png": "/personal-website/static/media/calculator.a9a5b0f3.png",
+    "static/media/calculator.f2c596c7.gif": "/personal-website/static/media/calculator.f2c596c7.gif",
+    "static/media/cv-application.05f0b1aa.gif": "/personal-website/static/media/cv-application.05f0b1aa.gif",
+    "static/media/cv-application.b800e88e.png": "/personal-website/static/media/cv-application.b800e88e.png",
+    "static/media/etch-a-sketch-shadow.684a74c5.png": "/personal-website/static/media/etch-a-sketch-shadow.684a74c5.png",
+    "static/media/etch-a-sketch.5f821984.gif": "/personal-website/static/media/etch-a-sketch.5f821984.gif",
+    "static/media/hacker_mindset.0d636481.svg": "/personal-website/static/media/hacker_mindset.0d636481.svg",
+    "static/media/shopping-cart.0089dfbe.png": "/personal-website/static/media/shopping-cart.0089dfbe.png",
+    "static/media/shopping-cart.f7f80055.gif": "/personal-website/static/media/shopping-cart.f7f80055.gif",
+    "static/media/tic-tac-toe-shadow.2962c681.png": "/personal-website/static/media/tic-tac-toe-shadow.2962c681.png",
+    "static/media/tic-tac-toe.1b0cf102.gif": "/personal-website/static/media/tic-tac-toe.1b0cf102.gif",
+    "static/media/weather-app.11baa24a.png": "/personal-website/static/media/weather-app.11baa24a.png",
+    "static/media/weather-app.adddfdbd.gif": "/personal-website/static/media/weather-app.adddfdbd.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb7857d0.js",
+    "static/css/2.7e33c8ea.chunk.css",
+    "static/js/2.35e6fabf.chunk.js",
+    "static/css/main.bb557bf1.chunk.css",
+    "static/js/main.2d435d2a.chunk.js"
+  ]
+}
