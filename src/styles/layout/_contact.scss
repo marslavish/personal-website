@@ -1,0 +1,42 @@
+// -----------------
+// Contact page
+// -----------------
+.contact-page {
+  max-width: 72rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 0 2.4rem 14rem 2.4rem;
+}
+
+.title-container.contact {
+  width: 100%;
+}
+
+.contact__para {
+  margin-bottom: 3rem;
+}
+
+.email-addr {
+  display: inline-block;
+  height: 2.2rem;
+  // color: rgba($color: $color-primary, $alpha: 0.8);
+  color: $color-dark;
+  margin-bottom: 5rem;
+  font-weight: 600;
+  font-family: $font-secondary;
+  font-size: 1.6rem;
+  border-bottom: 2px solid $color-dark;
+  transition: border-bottom-color 0.15s linear;
+
+  &:hover {
+    border-bottom-color: $color-white;
+  }
+}
+
+.title-reach-me {
+  margin-bottom: 2rem;
+}
+
+.social-media-btn {
+  margin-right: 1rem;
+}

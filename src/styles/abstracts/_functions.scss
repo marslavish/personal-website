@@ -1,0 +1,14 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin containerBox($width, $height) {
+  width: $width;
+  height: $height;
+  @include flexCenter;
+  // border: 2px dotted blue;
+  // margin-bottom: 1rem;
+}

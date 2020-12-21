@@ -1,0 +1,120 @@
+.project-page-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 0 2.4rem 14rem 2.4rem;
+}
+
+.project-page__heading {
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-page__heading.project-name {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+}
+
+.project-page__img {
+  width: 100%;
+}
+
+.project-page__para {
+  text-align: justify;
+  line-height: 2.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-page__list-item {
+  padding-left: 1em;
+  margin-bottom: 0.8rem;
+}
+
+.project-page__list-item::before {
+  content: "◦";
+  color: $color-primary;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.project-page__link {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-primary;
+  border-bottom: 1px solid white;
+  transition: border-bottom-color 0.15s linear;
+
+  &:hover {
+    border-bottom-color: $color-primary;
+  }
+}
+
+code {
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+/***************
+     BUTTONS
+ ***************/
+.switch-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.6rem;
+}
+
+.btn-visit-website {
+  margin-bottom: 9.6rem;
+}
+
+.btn-prev-project {
+  width: 100%;
+  margin-top: 0;
+}
+
+.btn-next-project {
+  width: 100%;
+  margin-top: 0;
+}
+
+.btn-view-all-projects {
+  width: 40px;
+  height: 40px;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-image: url("https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d4ab8adfaeb2dab8233ed41_Grid.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/***************
+  MEDIA QUERIES 
+ ***************/
+@media only screen and (min-width: 480px) {
+  .project-page__heading {
+    font: $heading-h4;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .switch-btn-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btn-prev-project {
+    margin-left: 0;
+    width: initial;
+  }
+  .btn-next-project {
+    margin-right: 0;
+    width: initial;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .project-page__heading.project-name {
+    font: $heading-h3;
+  }
+}

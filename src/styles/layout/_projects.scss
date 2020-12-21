@@ -1,0 +1,102 @@
+.project-list-container {
+  margin: 6rem 2.4rem;
+  margin-bottom: 0;
+  padding-bottom: 14rem;
+}
+
+// -----------------
+// Project cover
+// -----------------
+.projects {
+  @include flexCenter;
+}
+
+.project-cover {
+  @include flexCenter;
+  position: relative;
+  width: 100%;
+  margin: 1.6rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    will-change: transform, opacity;
+    .project-cover__slider {
+      transform: translateX(0);
+    }
+    .plus-sign,
+    .project-cover__text {
+      opacity: 1;
+      transform: translateX(30px);
+    }
+  }
+}
+
+.project-cover__img {
+  width: 100%;
+}
+
+.project-cover__slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-primary;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-in-out;
+}
+
+$delay: 230ms;
+$timing: ease-out;
+
+.plus-sign {
+  position: absolute;
+  right: 4.5rem;
+  top: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: $color-primary;
+  transition: transform 0.2s $timing $delay, opacity 0.1s $timing $delay;
+  opacity: 0;
+  @include flexCenter;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: white;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: white;
+  }
+}
+
+.project-cover__text {
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+  display: inline;
+  color: white;
+  opacity: 0;
+  transition: transform 0.2s $timing $delay, opacity 0.1s $timing $delay;
+}
+
+@media only screen and (min-width: 600px) {
+  .project-cover {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .project-cover {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .project-cover {
+    width: 40%;
+  }
+}

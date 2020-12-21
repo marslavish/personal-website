@@ -1,0 +1,87 @@
+// -----------------
+// Btn w/ background slider
+// -----------------
+.btn-bg-slide {
+  @include flexCenter;
+  position: relative;
+
+  padding: 0.8rem 3rem;
+  margin: 0 auto;
+  margin-top: 5.6rem;
+
+  border: 2px solid $color-primary;
+  border-radius: 0;
+  background: white;
+
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    .btn-bg-slide__text {
+      color: white;
+    }
+    .btn-bg-slide__slider {
+      transform: translateX(0);
+    }
+  }
+
+  &:disabled {
+    border-color: rgba($color: $color-primary, $alpha: 0.5);
+    color: rgba($color: $color-primary, $alpha: 0.5);
+    cursor: not-allowed;
+  }
+}
+
+.btn-bg-slide__text {
+  position: relative;
+  color: $color-primary;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.btn-bg-slide__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $color-primary;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.btn-bg-slide__slider.rtl {
+  transform: translateX(100%);
+}
+
+// -----------------
+// Btn background filled
+// -----------------
+.btn-bg-filled {
+  @include flexCenter;
+  position: relative;
+
+  padding: 0.8rem 3rem;
+  margin: 0 auto;
+  margin-top: 5.6rem;
+
+  border: 2px solid $color-primary;
+  border-radius: 0;
+  background-color: $color-primary;
+  transition: background-color 0.1s linear;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2e13e3;
+    span {
+      color: #f0f0ff;
+    }
+  }
+}
+
+.btn-bg-filled span {
+  color: $color-white;
+  transition: color 0.1s linear;
+}

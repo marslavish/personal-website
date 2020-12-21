@@ -1,0 +1,179 @@
+// -----------------
+// Nav container
+// -----------------
+.nav {
+  @include flexCenter;
+  height: 8rem;
+  z-index: 1;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+}
+
+.nav.no-border {
+  border-bottom: none;
+}
+
+// -----------------
+// Home title
+// -----------------
+.nav__home {
+  @include containerBox(20rem, 5rem);
+  justify-content: flex-start;
+  margin-right: auto;
+  padding-left: 2.4rem;
+  cursor: pointer;
+
+  &:hover {
+    .line {
+      transform: scaleX(2);
+      background: $color-primary;
+    }
+  }
+}
+
+.line {
+  width: 36px;
+  height: 1px;
+  background: #000;
+  transform-origin: 0 0;
+  transition: transform 0.4s, background 0.4s;
+}
+
+// -----------------
+// Nav icon
+// -----------------
+$line-width: 24px;
+$line-height: 2px;
+$length-gap: 8px;
+
+$duration: 0.2s;
+$first-line-scale: 1.08;
+$opened-bg-color: white;
+
+.icon-container {
+  @include containerBox(8rem, 8rem);
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.icon-container.opened {
+  .rec-top {
+    transform: rotate(45deg) scaleX($first-line-scale);
+    background: $opened-bg-color;
+  }
+  .rec-middle {
+    transform: translateX(100%);
+    opacity: 0;
+    background: $opened-bg-color;
+  }
+  .rec-bottom {
+    transform: translateX(-$length-gap) rotate(-45deg) scaleX(1.4);
+    background: $opened-bg-color;
+  }
+}
+
+.border {
+  position: relative;
+  width: $line-width + $length-gap;
+  height: $line-width + $line-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.rec-top {
+  position: relative;
+  width: $line-width + $length-gap;
+  height: $line-height;
+  background: $color-dark;
+  transform-origin: left;
+  transition: transform $duration linear, color $duration linear;
+}
+
+.rec-middle {
+  width: $line-width - $length-gap;
+  height: $line-height;
+  background: $color-dark;
+  opacity: 1;
+  transition: transform $duration linear, color $duration linear,
+    opacity $duration linear;
+}
+
+.rec-bottom {
+  position: relative;
+  width: $line-width;
+  height: $line-height;
+  background: $color-dark;
+  transform-origin: left;
+  transition: transform $duration linear, color $duration linear;
+}
+
+// -----------------
+// Nav sidebar
+// -----------------
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  min-width: 20rem;
+  height: 100vh;
+  background: $color-primary;
+  color: white;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  z-index: 10;
+}
+
+.nav.opened {
+  .side-bar {
+    transform: translateX(0);
+  }
+}
+
+.nav-items {
+  position: relative;
+  top: 8.8rem;
+  left: 3.2rem;
+}
+
+.nav-item {
+  position: relative;
+  width: min-content;
+  margin-bottom: 1rem;
+  padding: 0 0.8rem;
+  font: $heading-h6;
+  overflow: hidden;
+  z-index: 2;
+  cursor: pointer;
+
+  &:hover {
+    .nav-item__cover {
+      transform: translateY(0);
+    }
+  }
+}
+
+.nav-item__cover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  background: hsla(0, 0%, 100%, 0.3);
+  transform: translateY(100%);
+  transition: transform 0.1s ease-in-out;
+  z-index: 1;
+}
+
+/***************
+  MEDIA QUERIES
+ ***************/
+@media only screen and (min-width: 992px) {
+  .icon-container {
+    right: 1rem;
+  }
+}

@@ -1,0 +1,28 @@
+// Color Palette
+$color-white: #ffffff;
+$color-dark: #000026;
+$color-primary: #4830e6;
+$primary-color: #1e87e5;
+
+// Font family
+$font-primary: "Inconsolata", monospace;
+$font-secondary: "Lato", sans-serif;
+
+// Font weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+
+// Heading Styles
+$heading-h1: 48px / 54px $font-primary;
+$heading-h2: 42px / 48px $font-primary;
+$heading-h3: 36px / 42px $font-primary;
+$heading-h4: 30px / 36px $font-primary;
+$heading-h5: 24px / 30px $font-primary;
+$heading-h6: 18px / 26px $font-primary;
+
+// Paragraphs
+$typo-paragraphs: 16px/21px $font-secondary;
+
+// Buttons
+$typo-btns: 10px / 32px $font-primary;

@@ -1,0 +1,57 @@
+.about-me-page {
+  max-width: 72rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 0 2.4rem 14rem 2.4rem;
+}
+
+.title-container {
+  @include containerBox(100%, 5rem);
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.title-line {
+  width: 6rem;
+  height: 2px;
+  margin-right: 1.6rem;
+  background: $color-primary;
+}
+
+.about-me__text {
+  text-align: justify;
+  line-height: 2.6rem;
+  margin-bottom: 1.2rem;
+
+  &.last-para {
+    margin-bottom: 6.4rem;
+  }
+}
+
+.about-me__img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/***************
+  MEDIA QUERIES 
+ ***************/
+@media only screen and (min-width: 480px) {
+  .title-line {
+    width: 8rem;
+    margin-right: 2rem;
+  }
+  .title-text {
+    font: $heading-h4;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .title-line {
+    width: 12rem;
+    margin-right: 2.4rem;
+  }
+  .title-text {
+    font: $heading-h3;
+  }
+}
